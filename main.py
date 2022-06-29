@@ -18,7 +18,7 @@ cookie = driver.find_element(By.ID, "bigCookie")
 cookie_count = driver.find_element(By.ID, "cookies")
 items = [driver.find_element(By.ID, "productPrice" + str(i)) for i in range(1, -1, -1)]  # to check the expensive first
 
-for i in range(5000):
+for i in range(5001):
 	actions = ActionChains(driver)
 	actions.click(cookie)
 	actions.perform()
